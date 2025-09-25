@@ -252,9 +252,8 @@ class ToDoApp(QMainWindow):
 
     def load_notes(self):
         """Загружает заметки в QTableWidget"""
-        self.note_table.setRowCount(0) # Очищаем строки без заголовков
-        notes = self.todo.json_load()
-        for note in notes:
+        self.note_table.setRowCount(0) # Очищаем строки без заголовков        
+        for note in self.todo.notes:
             row = self.note_table.rowCount()
             self.note_table.insertRow(row)
         
@@ -292,10 +291,9 @@ class ToDoApp(QMainWindow):
             return
         # Читаем актуальные данные из файла
         notes = self.todo.json_load()        
-        if 0 <= row < __builtins__.len(notes):
+        if 0 <= row < len(self.todo.notes):
             notes[row]["Статус"] = True
-            with open(self.todo.filename, "w", encoding="utf-8") as file:
-                json.dump(notes, file, ensure_ascii=False, indent=4)
+            self.todo.save()
             self.load_notes()
         else:
             QMessageBox.warning(self, "Ошибка", "Задача не найдена.")
@@ -306,12 +304,14 @@ class ToDoApp(QMainWindow):
         if row is None:
             return
         notes = self.todo.json_load()
-        if 0 <= row < __builtins__.len(notes):
-            removed = notes.pop(row)
-            with open(self.todo.filename, "w", encoding="utf-8") as f:
-                json.dump(notes, f, ensure_ascii=False, indent=4)
+        if 0 <= row < __builtins__.len(self.todo.notes):
+            removed = self.todo.notes.pop(row)
+            self.todo.save()
             QMessageBox.information(self, "Аннигилировано!", f"Задача '{removed['Название']}' удалена.")
-            self.load_notes()         
+            self.load_notes() 
+        else:
+            QMessageBox.warning(self, "Ошибка", "Задача не найдена.")        
+        
 
 """Запуск приложения"""
  
