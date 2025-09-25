@@ -101,29 +101,28 @@ class NotePreprocessor(ToDoList):
         self.note = new_note   
                                 
     def update(self, number: int):
-        """Заменяет статус задачи на True"""
-        notes = self.json_load()
-        if not notes:
+        """Заменяет статус задачи на True"""        
+        if not self.notes:
             print("Нет сохранённых заметок")
             return None        
-        note = self.find_note(number, notes)
-        if not note["Статус"]:
+        note = self.find_note(number, self.notes)  
+        if note and not note["Статус"]:
             note["Статус"] = True 
-            print("Статус заметки изменен")
+            # print("Статус заметки изменен")
             self.save()
-            return 0       
+            return 0 
         
     def read(self):
         """Метод печатает список задач"""
         notes = self.json_load()
-        if not notes:
-            print("Нет сохраненных заметок")        
-        for index, note in enumerate(notes):
-            print("="*20, f"Заметка № {index + 1}", "="*40)
-            for key, value in note.items():
-                if key != "id":
-                    print(f"{key}: {value}")
-            print("="*73)
+        # if not notes:
+        #     # print("Нет сохраненных заметок")        
+        # for index, note in enumerate(notes):
+        #     print("="*20, f"Заметка № {index + 1}", "="*40)
+        #     for key, value in note.items():
+        #         if key != "id":
+        #             print(f"{key}: {value}")
+        #     print("="*73)
             
     def find_note(self, number: int, notes: list):
         "Метод ищет заметку по номеру"
@@ -164,12 +163,16 @@ class ToDoApp(QMainWindow):
     def init_ui(self):
         """Создает и настраивает интерфейс""" 
         # Настройка окна
-        self.setWindowTitle("Castom ToDo List")
+        self.setWindowTitle(f"Аннигилятор срочных дел")
+        self.setWindowIcon(QIcon("icon/icon.png"))
         self.resize(600, 500)
         
         # Стили
         self.setStyleSheet("""
-            QMainWindow { background-color: #35C0CD; }           
+            QMainWindow { 
+            background-color: #35C0CD;
+            font-size: 14px;
+            }           
             QPushButton {
                 background-color: #028E9B;
                 color: white;
@@ -223,7 +226,7 @@ class ToDoApp(QMainWindow):
         # Виджет заметок
         self.note_table = QTableWidget()
         self.note_table.setColumnCount(3)
-        self.note_table.setHorizontalHeaderLabels(["Список дел выжившего в офисе",
+        self.note_table.setHorizontalHeaderLabels(["Список дел выжившего",
                                                    "Статус выживания",
                                                    "Точка отсчёта"])        
         self.note_table.setSelectionBehavior(self.note_table.SelectRows)
@@ -287,17 +290,10 @@ class ToDoApp(QMainWindow):
         """Отмечает задачу как выполненную,
         перезаписывает файл"""      
         row = self.get_selected_row()
-        if row is None:
-            return
-        # Читаем актуальные данные из файла
-        notes = self.todo.json_load()        
-        if 0 <= row < len(self.todo.notes):
-            notes[row]["Статус"] = True
-            self.todo.save()
-            self.load_notes()
-        else:
-            QMessageBox.warning(self, "Ошибка", "Задача не найдена.")
-    
+        if row is not None:
+            self.todo.update(row + 1)  # потому что update ожидает номер с 1
+            self.load_notes()    
+ 
     def remove_note(self):
         """Удаляет заметку и перезаписывает файл"""
         row = self.get_selected_row()
