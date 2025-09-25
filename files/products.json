@@ -1,0 +1,309 @@
+
+[
+  {
+    "name": "Смартфон Galaxy S24",
+    "price": 899.99,
+    "category": "Электроника"
+  },
+  {
+    "name": "Ноутбук MacBook Air M2",
+    "price": 1199.0,
+    "category": "Электроника"
+  },
+  {
+    "name": "Наушники Sony WH-1000XM5",
+    "price": 349.5,
+    "category": "Электроника"
+  },
+  {
+    "name": "Кофемашина De'Longhi ECAM23.460",
+    "price": 749.99,
+    "category": "Бытовая техника"
+  },
+  {
+    "name": "Холодильник LG InstaView",
+    "price": 1899.0,
+    "category": "Бытовая техника"
+  },
+  {
+    "name": "Пылесос Dyson V15 Detect",
+    "price": 699.0,
+    "category": "Бытовая техника"
+  },
+  {
+    "name": "Футболка мужская хлопковая",
+    "price": 29.99,
+    "category": "Одежда"
+  },
+  {
+    "name": "Джинсы Levi's 501",
+    "price": 89.95,
+    "category": "Одежда"
+  },
+  {
+    "name": "Кроссовки Nike Air Max",
+    "price": 129.99,
+    "category": "Обувь"
+  },
+  {
+    "name": "Куртка зимняя The North Face",
+    "price": 249.5,
+    "category": "Одежда"
+  },
+  {
+    "name": "Кроссовки Adidas Ultraboost",
+    "price": 179.99,
+    "category": "Обувь"
+  },
+  {
+    "name": "Платье вечернее черное",
+    "price": 159.0,
+    "category": "Одежда"
+  },
+  {
+    "name": "Сапоги женские зимние",
+    "price": 199.99,
+    "category": "Обувь"
+  },
+  {
+    "name": "Рюкзак туристический 50L",
+    "price": 89.5,
+    "category": "Туризм"
+  },
+  {
+    "name": "Палатка 4-местная",
+    "price": 229.0,
+    "category": "Туризм"
+  },
+  {
+    "name": "Спальный мешок -10°C",
+    "price": 129.99,
+    "category": "Туризм"
+  },
+  {
+    "name": "Горелка газовая портативная",
+    "price": 45.5,
+    "category": "Туризм"
+  },
+  {
+    "name": "Фонарь светодиодный налобный",
+    "price": 35.99,
+    "category": "Туризм"
+  },
+  {
+    "name": "Книга '1984' Джордж Оруэлл",
+    "price": 15.99,
+    "category": "Книги"
+  },
+  {
+    "name": "Книга 'Мастер и Маргарита'",
+    "price": 18.5,
+    "category": "Книги"
+  },
+  {
+    "name": "Книга 'Гарри Поттер и философский камень'",
+    "price": 22.99,
+    "category": "Книги"
+  },
+  {
+    "name": "Настольная игра 'Монополия'",
+    "price": 29.95,
+    "category": "Игры"
+  },
+  {
+    "name": "Конструктор LEGO Star Wars",
+    "price": 89.99,
+    "category": "Игрушки"
+  },
+  {
+    "name": "Пазл 1000 элементов 'Альпы'",
+    "price": 19.99,
+    "category": "Игры"
+  },
+  {
+    "name": "Игровая приставка PlayStation 5",
+    "price": 499.0,
+    "category": "Электроника"
+  },
+  {
+    "name": "Игра God of War Ragnarok",
+    "price": 69.99,
+    "category": "Игры"
+  },
+  {
+    "name": "Мышь Logitech G502 HERO",
+    "price": 79.99,
+    "category": "Электроника"
+  },
+  {
+    "name": "Клавиатура механическая Corsair K70",
+    "price": 149.5,
+    "category": "Электроника"
+  },
+  {
+    "name": "Монитор 27\" 4K LG UltraFine",
+    "price": 599.0,
+    "category": "Электроника"
+  },
+  {
+    "name": "Жесткий диск SSD 1TB Samsung 980 Pro",
+    "price": 129.99,
+    "category": "Электроника"
+  },
+  {
+    "name": "Шампунь для волос 500 мл",
+    "price": 8.99,
+    "category": "Косметика"
+  },
+  {
+    "name": "Крем для лица увлажняющий",
+    "price": 24.5,
+    "category": "Косметика"
+  },
+  {
+    "name": "Зубная паста отбеливающая",
+    "price": 5.5,
+    "category": "Косметика"
+  },
+  {
+    "name": "Бритвенный станок Gillette Fusion",
+    "price": 12.99,
+    "category": "Косметика"
+  },
+  {
+    "name": "Дезодорант мужской Axe",
+    "price": 4.99,
+    "category": "Косметика"
+  },
+  {
+    "name": "Кофе молотый Lavazza 250г",
+    "price": 9.99,
+    "category": "Продукты"
+  },
+  {
+    "name": "Оливковое масло Extra Virgin 1л",
+    "price": 14.5,
+    "category": "Продукты"
+  },
+  {
+    "name": "Макароны Barilla 500г",
+    "price": 3.29,
+    "category": "Продукты"
+  },
+  {
+    "name": "Шоколад Milka 100г",
+    "price": 2.49,
+    "category": "Продукты"
+  },
+  {
+    "name": "Сыр пармезан 200г",
+    "price": 11.99,
+    "category": "Продукты"
+  },
+  {
+    "name": "Вино красное Cabernet Sauvignon",
+    "price": 19.95,
+    "category": "Алкоголь"
+  },
+  {
+    "name": "Пиво светлое 0.5л (упаковка 6 шт)",
+    "price": 12.99,
+    "category": "Алкоголь"
+  },
+  {
+    "name": "Виски Jack Daniel's 0.7л",
+    "price": 39.99,
+    "category": "Алкоголь"
+  },
+  {
+    "name": "Шампанское Brut 0.75л",
+    "price": 29.5,
+    "category": "Алкоголь"
+  },
+  {
+    "name": "Велосипед горный Stels Navigator",
+    "price": 459.0,
+    "category": "Спорт"
+  },
+  {
+    "name": "Гантели 5 кг (пара)",
+    "price": 49.99,
+    "category": "Спорт"
+  },
+  {
+    "name": "Йога-мат коврик нескользящий",
+    "price": 29.5,
+    "category": "Спорт"
+  },
+  {
+    "name": "Фитнес-браслет Xiaomi Mi Band 8",
+    "price": 49.99,
+    "category": "Электроника"
+  },
+  {
+    "name": "Скейтборд профессиональный",
+    "price": 129.0,
+    "category": "Спорт"
+  },
+  {
+    "name": "Мяч футбольный Adidas Champions League",
+    "price": 39.99,
+    "category": "Спорт"
+  },
+  {
+    "name": "Ракетка теннисная Wilson Pro Staff",
+    "price": 199.0,
+    "category": "Спорт"
+  },
+  {
+    "name": "Солнцезащитные очки Ray-Ban Aviator",
+    "price": 159.99,
+    "category": "Аксессуары"
+  },
+  {
+    "name": "Часы Casio G-Shock",
+    "price": 129.5,
+    "category": "Аксессуары"
+  },
+  {
+    "name": "Кошелек кожаный мужской",
+    "price": 59.99,
+    "category": "Аксессуары"
+  },
+  {
+    "name": "Шарф шерстяной клетчатый",
+    "price": 34.99,
+    "category": "Аксессуары"
+  },
+  {
+    "name": "Зонт складной автоматический",
+    "price": 25.5,
+    "category": "Аксессуары"
+  },
+  {
+    "name": "USB-флешка 128GB SanDisk",
+    "price": 19.99,
+    "category": "Электроника"
+  },
+  {
+    "name": "Внешний аккумулятор 20000mAh",
+    "price": 45.0,
+    "category": "Электроника"
+  },
+  {
+    "name": "Bluetooth-колонка JBL Flip 6",
+    "price": 129.99,
+    "category": "Электроника"
+  },
+  {
+    "name": "Умные часы Apple Watch Series 9",
+    "price": 399.0,
+    "category": "Электроника"
+  },
+  {
+    "name": "Планшет iPad Pro 12.9\"",
+    "price": 1099.0,
+    "category": "Электроника"
+  }
+]
+
